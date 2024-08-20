@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'MyCustomFont';
   src: url('./assets/fonts/BeatriceDeckTRIAL-Bold-BF64829e916f5e9.ttf') format('truetype');
@@ -17,15 +16,18 @@
   src: url('./assets/fonts/BeatriceDeckTRIAL-Light-BF64829e8e6b5e8.otf') format('truetype');
   font-weight: light;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'MyCustomFont';
 }
+
 body {
   background-color: #f3f3f3;
 }
+
 .header div ion-icon {
   background-color: #292929;
   padding: 10px;
@@ -35,6 +37,6 @@ body {
   font-size: 20px;
 }
 
-.header ion-icon:first-of-type{
+.header ion-icon:first-of-type {
   transform: rotate(-45deg);
 }

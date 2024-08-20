@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#292929",
+        secondary: "#D9D9D9",
       },
       transitionDuration: {
         'main-transition': '1s',

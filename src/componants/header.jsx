@@ -11,28 +11,25 @@ export default function Header() {
   useGSAP(
     () => {
       gsap.set(".links-item", {
-        y: 100,
+        x : -100,
         opacity: 0,
       });
       gsap.set(".links-section", {
-        x: "-100%",
+        y: "-100%",
       });
       timeLine.current = gsap
         .timeline({
           paused: true,
         })
         .to(".links-section", {
-          duration: 1.25,
-          x: "0%",
+          duration: 1,
+          y: "0%",
           ease: "power4.inOut",
         })
         .to(".links-item", {
-          delay: 0.1,
           opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power4.inOut4",
-          stagger: 1,
+          x : 0,
+          ease: "power4.inOut",
         });
     },
     {
@@ -77,7 +74,7 @@ export default function Header() {
             className="block w-12 h-1 rounded-xl my-1 bg-black transition duration-main-transition ease-main-transition"
             style={{
               transitionProperty: "all",
-              width: isMenuopen ? "0px" : "2.25rem",
+              width: isMenuopen ? "0px" : "0.50rem",
               opacity: isMenuopen ? "0" : "1",
             }}
           ></span>

@@ -10,7 +10,7 @@ import NotFound from "./componants/pages/NotFound";
 function App() {
   return (
     <>
-      <div className="px-6">
+      <div className="px-8">
        
         <Header />
         <Routes>

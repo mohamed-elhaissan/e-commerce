@@ -11,10 +11,7 @@ export default function WeekUpdate() {
     speed: 500,
     slidesToScroll: 4,
     slidesToShow: 4,
-    autoplay: true,
-    speed: 10000,
     autoplaySpeed: 2000,
-    
     focusOnSelect: true,
     cssEase: "linear",
     responsive: [

@@ -30,7 +30,7 @@ export default function Hero() {
             </p>
           </div>
           <div>
-            <NavLink to="NotFound.jsx" className="flex items-center py-2 px-5 gap-5 bg-secondary">
+            <NavLink to="collection" className="flex items-center py-2 px-5 gap-5 bg-secondary">
                 Go To Shop
               <img src={arrow} alt="" />
             </NavLink>

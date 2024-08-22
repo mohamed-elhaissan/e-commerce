@@ -1,7 +1,11 @@
 export default function Collection(){
     return(
         <div>
-            collection page
+            <p>COLLECTIONS</p>
+            <h2>PROUDUCTS</h2>
+            <div>
+                
+            </div>
         </div>
     )
 }

@@ -29,9 +29,19 @@ export default function Collections() {
           </h3>
         </div>
         <div className="flex justify-between flex-wrap mt-10 ">
-          {imgs.map((img, index) => (
+          {imgs.map((item, index) => (
             <div key={index}>
-              <img src={img} alt="collection" />
+              <div className="shopcontainer transition-all ease-main-transition-all duration-main-transition flex relative flex-col items-center  justify-center overflow-hidden cursor-pointer">
+                    <img src={item} alt="" className="w-full" />
+                    <div className="shop absolute w-full h-full flex justify-center gap-2 items-center transition-all ease-main-transition duration-main-transition text-black rounded-sm  bg-gray-200 z-20">
+                      <span className="text-4xl">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </span>
+                      <span className="text-4xl">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </span>
+                    </div>
+                  </div>
               <div className="flex justify-evenly mt-2 font-extrabold">
                 <h2>{titles[index]}</h2>
                 <p>$199</p>

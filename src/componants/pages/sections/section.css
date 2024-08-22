@@ -1,0 +1,14 @@
+.shop {
+    opacity: 0;
+    bottom: -100%;
+}
+.shopcontainer:hover .shop {
+    bottom: 0%;
+    opacity: 1;
+}
+ion-icon[name='cart-outline']:hover{
+    color: gold;
+}
+ion-icon[name='heart-outline']:hover{
+    color:red;
+}

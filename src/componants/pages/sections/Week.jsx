@@ -58,16 +58,19 @@ export default function WeekUpdate() {
         <div>
           <Slider {...settings}>
             {images.map((item, index) => (
-              <div
-                key={index}
-                className="flex relative flex-col items-center  justify-center overflow-hidden cursor-pointer"
-              >
-                <div className="absolute w-full h-full flex justify-center items-center text-black rounded-sm  bg-blue-200 z-20">
-                  <ion-icon name="heart-outline"></ion-icon>
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+              <div key={index} className="">
                 <div className="mx-5">
-                  <img src={item} alt="" className="w-full" />
+                  <div className="shopcontainer transition-all ease-main-transition-all duration-main-transition flex relative flex-col items-center  justify-center overflow-hidden cursor-pointer">
+                    <img src={item} alt="" className="w-full" />
+                    <div className="shop absolute w-full h-full flex justify-center gap-2 items-center transition-all ease-main-transition duration-main-transition text-black rounded-sm  bg-gray-200 z-20">
+                      <span className="text-4xl">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </span>
+                      <span className="text-4xl">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </span>
+                    </div>
+                  </div>
                   <div className="flex mt-2 font-bold justify-between items-center">
                     <h3>{titles[index]}</h3>
                     <span>99$</span>

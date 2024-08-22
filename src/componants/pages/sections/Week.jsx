@@ -4,6 +4,7 @@ import bijama3 from "../../../assets/bijama-3.svg";
 import bijama4 from "../../../assets/bijama-4.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./section.css";
 import Slider from "react-slick";
 export default function WeekUpdate() {
   var settings = {
@@ -59,8 +60,12 @@ export default function WeekUpdate() {
             {images.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center  justify-center "
+                className="flex relative flex-col items-center  justify-center overflow-hidden cursor-pointer"
               >
+                <div className="absolute w-full h-full flex justify-center items-center text-black rounded-sm  bg-blue-200 z-20">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
                 <div className="mx-5">
                   <img src={item} alt="" className="w-full" />
                   <div className="flex mt-2 font-bold justify-between items-center">

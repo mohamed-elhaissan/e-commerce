@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <div className="mt-32 bg-gray-200 text-center p-52" >
+      <div className="mt-32 bg-gray-200 text-center lg:p-52 sm:p-20" >
         <h2 className="text-6xl font-extrabold">
           <span className="text-gray-500">XV</span>XIVQR
         </h2>

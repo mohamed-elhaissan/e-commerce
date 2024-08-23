@@ -12,7 +12,7 @@ export default function Hero() {
           <h2 className="text-base">WOMEN</h2>
           <h2 className="text-base">KIDS</h2>
         </div>
-        <span className=" mt-5 bg-secondary transition duration-main-transition ease-main-transition py-4 cursor-pointer  w-1/4 flex items-center gap-5 justify-start rounder-sm  px-10">
+        <span className=" mt-5 bg-secondary transition duration-main-transition ease-main-transition py-4 cursor-pointer sm:w-1/2  lg:w-1/4 flex items-center gap-5 justify-start rounder-sm  px-10">
           <img src={search} alt="" />
           <input
             type="text"
@@ -21,10 +21,10 @@ export default function Hero() {
           />
         </span>
       </div>
-      <div className="flex mt-10  gap-10">
+      <div className="flex lg:flex-row mt-10 sm:flex-col gap-10">
         <div className="flex flex-col justify-between items-center">
           <div>
-            <h2 className="text-5xl font-extrabold mb-3	 w-1/2 text-primary">NEW COLLECTION</h2>
+            <h2 className="text-5xl font-extrabold mb-3 sm:w-full	 lg:w-1/2 text-primary">NEW COLLECTION</h2>
             <p>
               Summer <sup>2024</sup>
             </p>

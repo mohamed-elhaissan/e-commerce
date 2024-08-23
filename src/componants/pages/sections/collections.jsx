@@ -11,7 +11,7 @@ export default function Collections() {
   return (
     <>
       <div className="mt-32">
-        <h2 className="text-5xl mb-10 font-extrabold w-1/6">
+        <h2 className="text-5xl mb-10 sm:w-full font-extrabold lg:w-1/6">
           XIV COLLECTIONS 23-24 <sup className="text-blue-500">(04)</sup>
         </h2>
         <div className="flex gap-5">
@@ -28,7 +28,7 @@ export default function Collections() {
             KIDS <sup>(00)</sup>
           </h3>
         </div>
-        <div className="flex justify-between flex-wrap mt-10 ">
+        <div className="flex lg:justify-between flex-wrap sm:items-center sm:justify-center sm:mb-5 mt-10 ">
           {imgs.map((item, index) => (
             <div key={index}>
               <div className="shopcontainer transition-all ease-main-transition-all duration-main-transition flex relative flex-col items-center  justify-center overflow-hidden cursor-pointer">

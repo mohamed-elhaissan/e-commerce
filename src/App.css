@@ -26,6 +26,7 @@
 
 body {
   background-color: #f3f3f3;
+  overflow-x: hidden;
 }
 
 .header div ion-icon {

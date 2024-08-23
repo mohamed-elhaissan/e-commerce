@@ -9,6 +9,7 @@ import Slider from "react-slick";
 export default function WeekUpdate() {
   var settings = {
     infinite: true,
+    dots: true,
     speed: 500,
     slidesToScroll: 4,
     slidesToShow: 4,
@@ -52,7 +53,7 @@ export default function WeekUpdate() {
   return (
     <>
       <div className="mt-32">
-        <h2 className="text-5xl mb-10 font-extrabold w-1/6">
+        <h2 className="text-5xl mb-10 font-extrabold lg:w-1/6 sm:w-full">
           NEW THIS WEEK <sub className="text-blue-500">(4)</sub>
         </h2>
         <div>
@@ -71,8 +72,8 @@ export default function WeekUpdate() {
                       </span>
                     </div>
                   </div>
-                  <div className="flex mt-2 font-bold justify-between items-center">
-                    <h3>{titles[index]}</h3>
+                  <div className="flex mt-2 sm:flex-col sm:text-center font-bold justify-between items-center">
+                    <h3 className="sm:text-sm">{titles[index]}</h3>
                     <span>99$</span>
                   </div>
                 </div>

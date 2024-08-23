@@ -10,7 +10,7 @@ export default function Fashion() {
           <h2 className="text-5xl font-extrabold">
             Our Approach to fashion design
           </h2>
-          <p className="text-sm w-1/3 mt-2 text-center">
+          <p className="text-sm w-1/3 mt-2 text-center sm:text-sm sm:w-full">
             at elegant vogue , we blend creativity with craftsmanship to create
             fashion that transcends trends and stands the test of time each
             design is meticulously crafted, ensuring the highest quelity

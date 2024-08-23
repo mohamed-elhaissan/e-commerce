@@ -11,7 +11,7 @@ export default function Header() {
   useGSAP(
     () => {
       gsap.set(".links-item", {
-        x : -100,
+        x: -100,
         opacity: 0,
       });
       gsap.set(".links-section", {
@@ -28,7 +28,7 @@ export default function Header() {
         })
         .to(".links-item", {
           opacity: 1,
-          x : 0,
+          x: 0,
           ease: "power4.inOut",
         });
     },
@@ -54,7 +54,7 @@ export default function Header() {
           setisMenuOpen(!isMenuopen);
         }}
       >
-        <div className="cursor-pointer relative z-40">
+        <div className="menu cursor-pointer relative z-40">
           <span
             className="block w-10 h-1 rounded-xl mb-1 bg-black transition duration-main-transition ease-main-transition"
             style={{

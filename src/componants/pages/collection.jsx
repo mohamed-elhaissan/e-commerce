@@ -19,7 +19,7 @@ export default function Collection() {
           />
         </span>
       </div>
-      <h3 className="py-2 px-16 bg-gray-200 border-gray-400 border-solid border-1 inline">NEW</h3>
+      <h3 className="py-2 px-16 bg-gray-200 border-gray-400 border-solid border-1 inline mb-20">NEW</h3>
       <div className="flex flex-wrap justify-evenly items-center">
         {imgs.map((item, index) => (
           <div key={index}>

@@ -2,9 +2,12 @@ import img1 from "../../assets/items1.svg";
 import img2 from "../../assets/items2.svg";
 import img3 from "../../assets/items3.svg";
 import img4 from "../../assets/items4.svg";
+import img7 from "../../assets/items7.svg";
+import img8 from "../../assets/items8.svg";
+import img9 from "../../assets/items9.svg";
 import search from "../../assets/search.svg";
 export default function Collection() {
-  const imgs = [img1, img2, img3, img4];
+  const imgs = [img1, img2, img3, img4,img7,img8,img9];
   return (
     <div>
       <p className="text-sm opacity-40">COLLECTIONS</p>
@@ -23,7 +26,7 @@ export default function Collection() {
       <div className="flex flex-wrap justify-evenly items-center">
         {imgs.map((item, index) => (
           <div key={index}>
-            <img src={item} alt="" />
+            <img src={item} alt="" className="m-5 cursor-pointer" />
           </div>
         ))}
       </div>
